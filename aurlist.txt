@@ -1,0 +1,8 @@
+brave-bin 1:1.87.192-1
+catppuccin-cursors-mocha 2.0.0-1
+catppuccin-sddm-theme-mocha 1.1.2-1
+paru 2.1.0-2
+paru-debug 2.1.0-2
+pixie-sddm-git r23.12a5f45-1
+sddm-silent-theme 1.4.2-1
+wezterm-git 20240203.110809.r803.g05343b3-1
