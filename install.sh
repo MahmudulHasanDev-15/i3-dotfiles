@@ -5,7 +5,7 @@
 # Author: MahmudulHasanDev-15
 # License: MIT
 
-export scriptVersion="1.0"
+export scriptVersion="1.5"
 
 ### COLOR CODES ###
 export red="\e[1;31m"
@@ -23,7 +23,7 @@ confirmInstallation() {
 │  i3 Dotfiles                                     │
 │  By MahmudulHasanDev-15                          │
 │                                                  │
-│  Installer Version 1.0                           │
+│  Installer Version 1.5                           │
 │                                                  │
 └──────────────────────────────────────────────────┘
 
