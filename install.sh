@@ -388,7 +388,7 @@ EOF
     cp "${directory}/.tmux.conf"   "${HOME}/.tmux.conf"
     cp "${directory}/.wezterm.lua" "${HOME}/.wezterm.lua"
     cp "${directory}/.fehbg"       "${HOME}/.fehbg"
-
+    cp "${directory}/.p10k.zsh"    "${HOME}/.p10k.zsh"
     # SDDM config
     sudo cp "${directory}/sddm/sddm.conf" "/etc/sddm.conf"
 }
