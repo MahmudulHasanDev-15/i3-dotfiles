@@ -323,7 +323,7 @@ EOF
     if [ ! -d "$HOME/.oh-my-zsh" ]; then
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
     else
-        echo -e "${green}Oh My Zsh already installed, skipping...${reset}"
+        echo -e "${green}Oh My Zsh already is installed, skipping...${reset}"
     fi
 
     # Zsh plugins
@@ -333,14 +333,20 @@ EOF
         git clone https://github.com/zsh-users/zsh-autosuggestions \
           "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
     else
-        echo -e "${green}zsh-autosuggestions already installed, skipping...${reset}"
+        echo -e "${green}zsh-autosuggestions is already installed, skipping...${reset}"
     fi
 
     if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
         git clone https://github.com/zsh-users/zsh-syntax-highlighting \
           "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
     else
-        echo -e "${green}zsh-syntax-highlighting already installed, skipping...${reset}"
+        echo -e "${green}zsh-syntax-highlighting is already installed, skipping...${reset}"
+    fi
+
+    if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k/" ]; then
+        git clone https://github.com/romkatv/powerlevel10k \
+            "$HOME/.oh-my-zsh/themes/powerlevel10k"
+    else echo "${green}powerlevel10k is already installed, skipping...${reset}"
     fi
 }
 
@@ -389,6 +395,7 @@ EOF
     cp "${directory}/.wezterm.lua" "${HOME}/.wezterm.lua"
     cp "${directory}/.fehbg"       "${HOME}/.fehbg"
     cp "${directory}/.p10k.zsh"    "${HOME}/.p10k.zsh"
+    cp "${directory}/zsh-themes/catppuccin_mocha-zsh-syntax-highlighting.zsh" "${HOME}/.oh-my-zsh/custom/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh"
     # SDDM config
     sudo cp "${directory}/sddm/sddm.conf" "/etc/sddm.conf"
 }
