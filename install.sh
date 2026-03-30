@@ -74,6 +74,7 @@ EOF
     cd "/tmp" || exit 1
     git clone https://aur.archlinux.org/paru.git
     cd paru || exit 1
+    rustup default stable
     makepkg -si --noconfirm
     cd "${directory}" || exit 1
 }
