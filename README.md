@@ -28,7 +28,7 @@
 
 ### Install
 ```bash
-sudo pacman -S git base-devel
+sudo pacman -Sy git base-devel
 git clone https://github.com/MahmudulHasanDev-15/i3-dotfiles.git
 cd i3-dotfiles
 chmod +x install.sh
