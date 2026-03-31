@@ -1,24 +1,4 @@
-#
-#      _           _              ___  _  _    ___  ____
-#     | |_   _ ___| |_ _   _ ___ / _ \| || |  / _ \| ___|
-#  _  | | | | / __| __| | | / __| | | | || |_| | | |___ \
-# | |_| | |_| \__ \ |_| |_| \__ \ |_| |__   _| |_| |___) |
-#  \___/ \__,_|___/\__|\__,_|___/\___/   |_| _\___/|____/
-#  / ___|__ _| |_ _ __  _ __  _   _  ___ ___(_)_ __
-# | |   / _` | __| '_ \| '_ \| | | |/ __/ __| | '_ \
-# | |__| (_| | |_| |_) | |_) | |_| | (_| (__| | | | |
-#  \____\__,_|\__| .__/| .__/ \__,_|\___\___|_|_| |_|
-#                |_|   |_|
-#
-
-#
-#  _____ _
-# |_   _| |__   ___ _ __ ___   ___
-#   | | | '_ \ / _ \ '_ ` _ \ / _ \
-#   | | | | | |  __/ | | | | |  __/
-#   |_| |_| |_|\___|_| |_| |_|\___|
-#
-
+#color
 set $rosewater #f5e0dc
 set $flamingo  #f2cdcd
 set $pink      #f5c2e7
@@ -69,17 +49,8 @@ gaps outer 15px
 smart_gaps inverse_outer
 
 for_window [class="org.gnome.FileRoller"] floating enable
-#for_window [class="Minecraft Launcher"] floating enable
-for_window [class="gnome-text-editor"] floating enable
-for_window [class="gnome-calculator"] floating enable
-for_window [class="gnome-calendar"] floating enable
-#for_window [class="Totem"] floating enable
-for_window [class="loupe"] floating enable
 for_window [class="mpv"] floating enable
 
-#for_window [class="org.gnome.Nautilus"] floating enable
-#for_window [class="pcmanfm"] floating enable
-#for_window [class="Nemo"] floating enable
 
 #
 #     _         _            _             _
@@ -140,7 +111,7 @@ bindsym Ctrl+Shift+Escape exec --no-startup-id resources
 # start rofi
 bindsym $mod+d exec "/home/mahmudul/.config/rofi/launchers/type-3/launcher.sh"
 #bindsym $mod+o exec "rofi -modi ssh,run -show ssh"
-#bindsym $mod+p exec "rofi -show calc -modi calc -no-show-match -no-sort"
+bindsym $mod+p exec "rofi -show calc -modi calc -no-show-match -no-sort"
 bindsym $mod+w exec "$HOME/.config/rofi/scripts/wallpaper-picker.sh"
 #bindsym Mod1+z exec "$HOME/.config/rofi/scripts/gpu-screen-recorder.sh"
 #bindsym Mod1+Tab exec "rofi -modi window,run -show window"
